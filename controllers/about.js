@@ -1,8 +1,10 @@
-const path = require('path')
+// const path = require('path')
 
 class aboutController {
     static getIndex(req, res) {
-        res.sendFile(path.resolve(`${__dirname}/../views/about.html`));
+        res.render('about', {
+            title: 'about'
+        });
     }
 }
 

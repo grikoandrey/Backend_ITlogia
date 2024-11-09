@@ -1,4 +1,4 @@
-const path = require('path')
+// const path = require('path')
 const ProductModel = require('../models/product');
 
 class serviceController {
@@ -6,7 +6,10 @@ class serviceController {
         const products = await ProductModel.findAll({
 
         })
-        res.sendFile(path.resolve(`${__dirname}/../views/service.html`));
+        res.render('service', {
+            title: 'service',
+            products: products,
+        });
     }
 }
 
