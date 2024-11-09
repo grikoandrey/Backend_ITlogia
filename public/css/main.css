@@ -1,0 +1,34 @@
+body {
+    background-color: #DCDCF3;
+}
+
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.product .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.product .description {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 22px;
+}
