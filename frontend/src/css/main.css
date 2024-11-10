@@ -11,11 +11,12 @@ body {
 }
 
 .product {
+    margin: 20px auto;
+    text-decoration: none;
     width: 200px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
     text-align: center;
 }
 
