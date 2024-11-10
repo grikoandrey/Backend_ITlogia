@@ -1,7 +1,9 @@
 const express = require('express');
-const indexController = require('../controllers/index');
-const router = express.Router();
+const productRoutes = require('./service');
+// const indexController = require('../controllers/index');
 
-router.get('/', indexController.getIndex);
+const router = express.Router({ mergeParams: true });
+
+router.use('/service', productRoutes);
 
 module.exports = router;

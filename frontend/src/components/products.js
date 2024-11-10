@@ -7,7 +7,7 @@ export class Products {
     }
 
     async getProducts() {
-        const response = await fetch(`/api/products`);
+        const response = await fetch(`http://localhost:3000/api/service`);
         return await response.json();
     }
 
